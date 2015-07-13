@@ -1,0 +1,57 @@
+.pres-outer-container{
+	header{	
+		position: relative;
+		height: 115px;
+
+		section{
+			width:$full-width;
+			border-bottom:1px solid $grey;
+			padding:0 0 5px 0;		
+			position: fixed;
+			background-color: $white;
+			
+			span{	
+				color:$black;
+				display: block;
+				font-size:$h1-size;
+				text-align: center;
+				 @include breakpoint(mobile) {
+				 	font-size:$h1-size;
+				 }			
+			}
+			figure{	
+				display: inline-block;
+			    left: 45%;
+			    position: relative;
+			    -moz-transition: -moz-transform left 0.6s ease;      
+		        -webkit-transition: -webkit-transform left 0.6s ease;      
+		        -o-transition: -o-transform left 0.6s ease;
+		        transition: left 0.6s ease;   	
+			}
+		}
+	}
+	header.is-hdr-md-anim{
+		height: 60px;
+		section{			
+			span{			
+				font-size:$h1-size;				
+				display: inline;
+				left: 25%;
+				position: relative;
+				vertical-align: middle;
+				 @include breakpoint(mobile) {
+				 	font-size:$h5-size;
+				 }	
+			}
+			figure{	
+				display: inline;
+				left: 55px;		
+				-moz-transition: -moz-transform left 0.6s ease;      
+		        -webkit-transition: -webkit-transform left 0.6s ease;      
+		        -o-transition: -o-transform left 0.6s ease;
+		        transition: left 0.6s ease;
+	            
+			}
+		}
+	}
+}
